@@ -17,6 +17,11 @@
 		2DCD954D1E0B4F2C00145EB5 /* WidgetTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* WidgetTests.m */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		B29F1F9FFA9BB9A6E409C262 /* libPods-Widget.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EEE630476A97D0F3339725D /* libPods-Widget.a */; };
+		BF86307E251C9DB7002215D9 /* SharedStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = BF86307D251C9DB7002215D9 /* SharedStorage.m */; };
+		BFF09FEC251C920C003F42A5 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFF09FEB251C920C003F42A5 /* NotificationCenter.framework */; };
+		BFF09FEF251C920C003F42A5 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF09FEE251C920C003F42A5 /* TodayViewController.swift */; };
+		BFF09FF2251C920C003F42A5 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFF09FF0251C920C003F42A5 /* MainInterface.storyboard */; };
+		BFF09FF6251C920C003F42A5 /* WidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = BFF09FEA251C920C003F42A5 /* WidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		C37E8AE2F2A258EAD7ADB9E2 /* libPods-Widget-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C21487FC716FC66A43B062A3 /* libPods-Widget-tvOSTests.a */; };
 		C4203078F9F676437C5B93B8 /* libPods-Widget-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4F3FBE292EB6A2F8FE75D79 /* libPods-Widget-tvOS.a */; };
 		DED0122086F5DB73A934290C /* libPods-Widget-WidgetTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DF36F925698EFCDED7315B18 /* libPods-Widget-WidgetTests.a */; };
@@ -37,7 +42,28 @@
 			remoteGlobalIDString = 2D02E47A1E0B4A5D006451C7;
 			remoteInfo = "Widget-tvOS";
 		};
+		BFF09FF4251C920C003F42A5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BFF09FE9251C920C003F42A5;
+			remoteInfo = WidgetExtension;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BFF09FF7251C920C003F42A5 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				BFF09FF6251C920C003F42A5 /* WidgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		008F07F21AC5B25A0029DE68 /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
@@ -60,6 +86,14 @@
 		854C420433F9BC7A04FF707D /* Pods-Widget.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Widget.debug.xcconfig"; path = "Target Support Files/Pods-Widget/Pods-Widget.debug.xcconfig"; sourceTree = "<group>"; };
 		8C3CFAC90749BA4E9F3FF407 /* Pods-Widget-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Widget-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-Widget-tvOSTests/Pods-Widget-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		BC3A36A4391B36D3F4D264F2 /* Pods-Widget-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Widget-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-Widget-tvOSTests/Pods-Widget-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		BF86307B251C9CB9002215D9 /* WidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WidgetExtension.entitlements; sourceTree = "<group>"; };
+		BF86307C251C9DB7002215D9 /* SharedStorage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SharedStorage.h; sourceTree = "<group>"; };
+		BF86307D251C9DB7002215D9 /* SharedStorage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SharedStorage.m; sourceTree = "<group>"; };
+		BFF09FEA251C920C003F42A5 /* WidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = WidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFF09FEB251C920C003F42A5 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		BFF09FEE251C920C003F42A5 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		BFF09FF1251C920C003F42A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		BFF09FF3251C920C003F42A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C21487FC716FC66A43B062A3 /* libPods-Widget-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Widget-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C954DE18008C9ABCB2B3FD7E /* Pods-Widget-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Widget-tvOS.release.xcconfig"; path = "Target Support Files/Pods-Widget-tvOS/Pods-Widget-tvOS.release.xcconfig"; sourceTree = "<group>"; };
 		CF175AC0F59E5C708CBD4F22 /* Pods-Widget-WidgetTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Widget-WidgetTests.release.xcconfig"; path = "Target Support Files/Pods-Widget-WidgetTests/Pods-Widget-WidgetTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -99,6 +133,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				C37E8AE2F2A258EAD7ADB9E2 /* libPods-Widget-tvOSTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFF09FE7251C920C003F42A5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFF09FEC251C920C003F42A5 /* NotificationCenter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,7 +190,6 @@
 				BC3A36A4391B36D3F4D264F2 /* Pods-Widget-tvOSTests.debug.xcconfig */,
 				8C3CFAC90749BA4E9F3FF407 /* Pods-Widget-tvOSTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -161,6 +202,7 @@
 				DF36F925698EFCDED7315B18 /* libPods-Widget-WidgetTests.a */,
 				E4F3FBE292EB6A2F8FE75D79 /* libPods-Widget-tvOS.a */,
 				C21487FC716FC66A43B062A3 /* libPods-Widget-tvOSTests.a */,
+				BFF09FEB251C920C003F42A5 /* NotificationCenter.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -175,9 +217,12 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				BF86307C251C9DB7002215D9 /* SharedStorage.h */,
+				BF86307D251C9DB7002215D9 /* SharedStorage.m */,
 				13B07FAE1A68108700A75B9A /* Widget */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* WidgetTests */,
+				BFF09FED251C920C003F42A5 /* WidgetExtension */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				1F81F078FC079B8214583F78 /* Pods */,
@@ -194,8 +239,20 @@
 				00E356EE1AD99517003FC87E /* WidgetTests.xctest */,
 				2D02E47B1E0B4A5D006451C7 /* Widget-tvOS.app */,
 				2D02E4901E0B4A5D006451C7 /* Widget-tvOSTests.xctest */,
+				BFF09FEA251C920C003F42A5 /* WidgetExtension.appex */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		BFF09FED251C920C003F42A5 /* WidgetExtension */ = {
+			isa = PBXGroup;
+			children = (
+				BF86307B251C9CB9002215D9 /* WidgetExtension.entitlements */,
+				BFF09FEE251C920C003F42A5 /* TodayViewController.swift */,
+				BFF09FF0251C920C003F42A5 /* MainInterface.storyboard */,
+				BFF09FF3251C920C003F42A5 /* Info.plist */,
+			);
+			path = WidgetExtension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,10 +289,12 @@
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
 				524FB77D5177BEEAC4333090 /* [CP] Copy Pods Resources */,
+				BFF09FF7251C920C003F42A5 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				BFF09FF5251C920C003F42A5 /* PBXTargetDependency */,
 			);
 			name = Widget;
 			productName = Widget;
@@ -281,12 +340,30 @@
 			productReference = 2D02E4901E0B4A5D006451C7 /* Widget-tvOSTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		BFF09FE9251C920C003F42A5 /* WidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BFF09FFA251C920C003F42A5 /* Build configuration list for PBXNativeTarget "WidgetExtension" */;
+			buildPhases = (
+				BFF09FE6251C920C003F42A5 /* Sources */,
+				BFF09FE7251C920C003F42A5 /* Frameworks */,
+				BFF09FE8251C920C003F42A5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WidgetExtension;
+			productName = WidgetExtension;
+			productReference = BFF09FEA251C920C003F42A5 /* WidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		83CBB9F71A601CBA00E9B192 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 1160;
 				LastUpgradeCheck = 1130;
 				TargetAttributes = {
 					00E356ED1AD99517003FC87E = {
@@ -304,6 +381,11 @@
 						CreatedOnToolsVersion = 8.2.1;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 2D02E47A1E0B4A5D006451C7;
+					};
+					BFF09FE9251C920C003F42A5 = {
+						CreatedOnToolsVersion = 11.6;
+						DevelopmentTeam = LHKFBLKF48;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -324,6 +406,7 @@
 				00E356ED1AD99517003FC87E /* WidgetTests */,
 				2D02E47A1E0B4A5D006451C7 /* Widget-tvOS */,
 				2D02E48F1E0B4A5D006451C7 /* Widget-tvOSTests */,
+				BFF09FE9251C920C003F42A5 /* WidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -357,6 +440,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFF09FE8251C920C003F42A5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFF09FF2251C920C003F42A5 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -570,6 +661,7 @@
 			files = (
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
+				BF86307E251C9DB7002215D9 /* SharedStorage.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -590,6 +682,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BFF09FE6251C920C003F42A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFF09FEF251C920C003F42A5 /* TodayViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -603,7 +703,23 @@
 			target = 2D02E47A1E0B4A5D006451C7 /* Widget-tvOS */;
 			targetProxy = 2D02E4911E0B4A5D006451C7 /* PBXContainerItemProxy */;
 		};
+		BFF09FF5251C920C003F42A5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BFF09FE9251C920C003F42A5 /* WidgetExtension */;
+			targetProxy = BFF09FF4251C920C003F42A5 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BFF09FF0251C920C003F42A5 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BFF09FF1251C920C003F42A5 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
@@ -653,6 +769,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 854C420433F9BC7A04FF707D /* Pods-Widget.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -676,6 +793,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5F84D00343EC064831412A3E /* Pods-Widget.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -916,6 +1034,63 @@
 			};
 			name = Release;
 		};
+		BFF09FF8251C920C003F42A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = WidgetExtension/WidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = LHKFBLKF48;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = WidgetExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = org.reactjs.native.example.Widget.WidgetExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BFF09FF9251C920C003F42A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = WidgetExtension/WidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = LHKFBLKF48;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = WidgetExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = org.reactjs.native.example.Widget.WidgetExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -960,6 +1135,15 @@
 			buildConfigurations = (
 				83CBBA201A601CBA00E9B192 /* Debug */,
 				83CBBA211A601CBA00E9B192 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BFF09FFA251C920C003F42A5 /* Build configuration list for PBXNativeTarget "WidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFF09FF8251C920C003F42A5 /* Debug */,
+				BFF09FF9251C920C003F42A5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
